@@ -1,0 +1,182 @@
+.search__input-item::-webkit-input-placeholder {
+  color: #acabab;
+  font-size: 22px;
+}
+.search__input {
+  display: flex;
+  align-items: center;
+}
+li {
+  list-style: none;
+}
+.search__input > input {
+  width: 500px;
+  height: 40px;
+  border: 0;
+  font-size: 20px;
+  padding-left: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.search__icon {
+  width: 40px;
+  height: 40px;
+  background: #317cf0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.search__icon > img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user__ava {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  width: 55px;
+  height: 53px;
+  background: #317cf0;
+  border-radius: 14px;
+  /* margin-top: 3px; */
+}
+.user__pochta {
+  width: 60px;
+  height: 60px;
+  margin-right: 30px;
+  margin-top: 3px;
+}
+.user__avatar {
+  width: 40px;
+  height: 40px;
+}
+
+/* admin-section 1*/
+.lessons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.lessons__item:first-child {
+  width: 75%;
+}
+.lessons__item:last-child {
+  width: 25%;
+}
+.lesson__link {
+  cursor: pointer;
+  color: grey;
+  font-size: 18px;
+  line-height: 1;
+  text-decoration: none;
+  padding-left: 10px;
+  transition: color 0.2s linear;
+}
+
+.lesson__link:hover {
+  color: rgb(17, 0, 255);
+}
+
+.lessons__item-inner {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.lesson__otsenka {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.lesson__text {
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.lesson__text > a {
+  color: #706e6e;
+  text-decoration: none;
+  transition: color 0.2s linear;
+}
+.lesson__text > a:hover {
+  color: #0400ff;
+}
+
+.lesson__btn {
+  width: 235px;
+  height: 60px;
+  padding: 10px;
+  background: #317cf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lesson__btn:hover {
+  /* background: linear-gradient(45deg, #317cf0, #988ef8); */
+  background: radial-gradient(rgb(105, 163, 238), #317cf0);
+}
+.lesson__btn > a {
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fac36b;
+  transition: color 0.2s linear;
+}
+.lesson__btn > a:hover {
+  color: #ff9d00;
+}
+
+.points {
+  width: 100%;
+  text-align: left;
+}
+
+.points > p > a {
+  text-decoration: none;
+}
+.points > p > a:hover {
+  color: blue;
+}
+
+@media (max-width: 991px) {
+  .search__input > input {
+    width: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .search__input > input {
+    width: 190px;
+  }
+}
+@media (max-width: 600px) {
+  .logo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .search {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .search__input {
+    justify-content: center;
+  }
+  .lichn {
+    width: 100%;
+  }
+  .search__input > input {
+    width: 50%;
+  }
+  .user {
+    justify-content: center;
+  }
+}

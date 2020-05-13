@@ -1,0 +1,67 @@
+.video {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+video {
+  outline: none;
+}
+
+audio {
+  outline: none;
+  background: #2994f4;
+  padding: 10px 20px;
+}
+
+.audio {
+  text-align: center;
+}
+
+.video__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.questions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.question__time {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.question__answer {
+  /* padding: 5px; */
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  font-size: 17px;
+}
+
+.places {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.places__item {
+  margin-bottom: 15px;
+}
+
+.question__answer-end {
+  width: 60%;
+  border-bottom: 1px solid black;
+}
+
+.video-itog{
+  text-align: center;
+  font-weight: bold;
+  font-size: 23px;
+  color: green;
+}
+.itog__title, .for__lesson{
+  text-transform: uppercase;
+}
