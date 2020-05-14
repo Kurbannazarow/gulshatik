@@ -1,0 +1,134 @@
+.lesson1__section1-inner {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.lesson1__section1-title,
+.audio {
+    text-align: center;
+}
+
+.lesson1__section1-title {
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 23px;
+}
+
+.input__inner {
+    width: 100%;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input__item {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.irochka {
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    font-size: 18px;
+}
+
+.plus-minus {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    margin-left: 20px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-left: 2px solid grey;
+    border-right: 2px solid grey;
+    border-radius: 5px;
+}
+
+
+/** udareniye */
+.udareniye {
+    position: relative;
+}
+
+.udareniye::before {
+    content: "'";
+    display: block;
+    position: absolute;
+    left: 2px;
+    top: -12px;
+    width: 10px;
+    height: 10px;
+}
+
+/**itogo */
+.section1__footer {
+    margin-bottom: 30px;
+}
+
+.section1__finall {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.section1__itog {
+    padding: 15px;
+    background: rgb(21, 163, 21);
+    margin-right: 30px;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+}
+
+.section1__itog:hover {
+    background: rgb(0, 255, 85);
+}
+
+/** audio */
+audio {
+    background: #f1f3f4;
+}
+
+audio:focus {
+    outline: none;
+}
+
+audio:hover,
+audio:focus,
+audio:active {
+    -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+audio {
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -moz-box-shadow: 2px 2px 4px 0px #006773;
+    -webkit-box-shadow: 2px 2px 4px 0px #006773;
+    box-shadow: 2px 2px 4px 0px #006773;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+    border-radius: 7px 7px 7px 7px;
+}
