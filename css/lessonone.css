@@ -8,6 +8,12 @@
     text-align: center;
 }
 
+.video {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
 .lesson1__section1-title {
     font-size: 20px;
     width: 50%;
@@ -56,6 +62,27 @@
     border-radius: 5px;
 }
 
+.circle-true,
+.circle-false {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    align-content: center;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.circle-true {
+    background: green;
+}
+
+.circle-false {
+    background: red;
+}
 
 /** udareniye */
 .udareniye {
