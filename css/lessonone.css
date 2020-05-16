@@ -74,6 +74,7 @@
     align-content: center;
     margin-bottom: 0;
     margin-top: 20px;
+    margin-left: 20px;
 }
 
 .circle-true {
@@ -81,6 +82,37 @@
 }
 
 .circle-false {
+    background: red;
+}
+
+.plus-true,
+.plus-false {
+    width: 20px;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    align-content: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+input {
+    margin-left: 10px;margin-right: 10px;
+}
+
+.plus-true {
+    background: green;
+}
+
+.plus-false {
     background: red;
 }
 
@@ -125,6 +157,12 @@
 
 .section1__itog:hover {
     background: rgb(0, 255, 85);
+}
+
+.input__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 /** audio */

@@ -13,44 +13,38 @@
 
     <header class="header">
         <div class="container">
-          <div class="header__item">
-            <div class="logo">
-              <a href="index.html" class="logo__link">
-                <img class="logo__img" src="./img/icons/лого.svg" alt="logo" />
-              </a>
+            <div class="header__item">
+                <div class="logo">
+                    <a href="index.html" class="logo__link">
+                        <img class="logo__img" src="./img/icons/лого.svg" alt="logo" />
+                    </a>
+                </div>
+                <nav class="nav">
+                    <a href="admin.html">
+                        <li>Курс</li>
+                    </a>
+                    <a class="acti" href="index.html#news">
+                        <li>Новости</li>
+                    </a>
+                    <a href="index.html#about">
+                        <li>О нас</li>
+                    </a>
+                    <a href="index.html#social">
+                        <li>Связаться</li>
+                    </a>
+                </nav>
             </div>
-            <nav class="nav">
-              <a href="admin.html">
-                <li>Курс</li>
-              </a>
-              <a class="acti" href="index.html#news">
-                <li>Новости</li>
-              </a>
-              <a href="index.html#about">
-                <li>О нас</li>
-              </a>
-              <a href="index.html#social">
-                <li>Связаться</li>
-              </a>
-            </nav>
-          </div>
         </div>
-      </header>
+    </header>
 
     <section class="lesson1-section1">
         <div class="container">
-            
-          <div class="video">
-            <video
-              controls
-              width="800"
-              height="400"
-              poster="./img/videolesson/playload.png"
-              preload="none"
-            >
-              <source src="./videos/eee.mp4" type="video/mp4" />
-            </video>
-          </div>
+
+            <div class="video">
+                <video controls width="800" height="400" poster="./img/videolesson/playload.png" preload="none">
+                    <source src="./videos/eee.mp4" type="video/mp4" />
+                </video>
+            </div>
 
             <div class="lesson1__section1-item">
 
@@ -96,14 +90,47 @@
                         </audio>
                     </div>
                     <div class="input">
-                        <div class="input__item">Андрей Михайлович <input class="plus-minus" type="text"></div>
-                        <div class="input__item">Михаил Петрович <input class="plus-minus" type="text"> </div>
-                        <div class="input__item">Валерий Сергеевич <input class="plus-minus" type="text"> </div>
-                        <div class="input__item">Анатолий Борисович <input class="plus-minus" type="text"> </div>
-                        <div class="input__item">Нина Михайловна <input class="plus-minus" type="text"> </div>
-                        <div class="input__item">Ирина Сергеева <input class="plus-minus" type="text"> </div>
-                        <div class="input__item">Елена Николаевна <input class="plus-minus" type="text"> </div>
-                        <div class="input__item">Лариса Васильевна <input class="plus-minus" type="text"> </div>
+                        <div class="input__item">
+                            <span class="input__man" data-man="Андрей  Михайлович">Андрей Михайлович</span>
+                            <input class="plus-minus" type="text">
+                            <span class="plus-x"></span>
+                        </div>
+                        <div class="input__item">
+                            <span class="input__man" data-man="Михаил Петрович">Михаил Петрович</span>
+                            <input class="plus-minus" type="text">
+                            <span class="plus-x"></span>
+                        </div>
+                        <div class="input__item">
+                            <span class="input__man" data-man="Валерий  Сергеевич">Валерий Сергеевич</span>
+                            <input class="plus-minus" type="text">
+                            <span class="plus-x"></span>
+                        </div>
+                        <div class="input__item">
+                            <span class="input__man" data-man="Анатолий  Борисович">Анатолий Борисович</span>
+                            <input class="plus-minus" type="text">
+                            <span class="plus-x"></span>
+                        </div>
+                        <div class="input__item">
+                            <span class="input__man" data-man="Нина  Михайловна">Нина Михайловна</span>
+                            <input class="plus-minus" type="text">
+                            <span class="plus-x"></span>
+                        </div>
+                        <div class="input__item">
+                            <span class="input__man" data-man="Ирина Сергеева">Ирина Сергеева</span>
+                            <input class="plus-minus" type="text">
+                            <span class="plus-x"></span>
+                        </div>
+                        <div class="input__item">
+                            <span class="input__man" data-man="Елена  Николаевна">Елена Николаевна</span>
+                            <input class="plus-minus" type="text">
+                            <span class="plus-x"></span>
+                        </div>
+                        <div class="input__item">
+                            <span class="input__man" data-man="Лариса  Васильевна">Лариса Васильевна</span>
+                            <input class="plus-minus" type="text">
+                            <span class="plus-x"></span>
+                        </div>
+                        <div class="asa">aaaaa</div>
                     </div>
                 </div>
 
@@ -119,22 +146,27 @@
                         </audio>
                     </div>
                     <div class="input">
-                        <div class="input__item">1. Девочка <input type="text" class="irochka"> гуляла в парке.</div>
+                        <div class="input__item">1. Девочка <input type="text" class="irochka" data-irochka="Ирочка">
+                            гуляла в парке.</div>
                         <!--Ирочка-->
-                        <div class="input__item">2. Очень долго <input type="text" class="irochka"> не знала, что
+                        <div class="input__item">2. Очень долго <input type="text" class="irochka"
+                                data-irochka="Светлана Борисовна"> не знала, что
                             делать.</div>
                         <!--Светлана Борисовна -->
-                        <div class="input__item">3. Я не знаю <input type="text" class="irochka">. </div>
+                        <div class="input__item">3. Я не знаю <input type="text" class="irochka"
+                                data-irochka="Татьяну Петровну">. </div>
                         <!--Татьяну Петровну.-->
                         <div class="input__item">4. У меня был знакомый, которого все называли <input type="text"
-                                class="irochka">. </div>
+                                class="irochka" data-irochka="Васильевич">. </div>
                         <!--Васильевич-->
                         <div class="input__item">5. Меня познакомили с красивой девушкой. Её зовут <input type="text"
-                                class="irochka">. </div>
+                                class="irochka" data-irochka="Елена">. </div>
                         <!--Елена-->
-                        <div class="input__item">6. Моя мама называла меня <input type="text" class="irochka">. </div>
+                        <div class="input__item">6. Моя мама называла меня <input type="text" class="irochka"
+                                data-irochka="Серёженька">. </div>
                         <!--Серёженька-->
-                        <div class="input__item">7. Вчера мы встретили <input type="text" class="irochka">. </div>
+                        <div class="input__item">7. Вчера мы встретили <input type="text" class="irochka"
+                                data-irochka="Владимира Борисовича">. </div>
                         <!--Владимира Борисовича-->
                     </div>
                 </div>
@@ -204,19 +236,24 @@
                     <div class="input">
                         <div class="input__item"><b>А</b></div>
                         <div class="input__item">— Доброе <span class="udareniye">у</span>тро! </div>
-                        <div class="input__item">— Здр<span class="udareniye">а</span>вствуйте. Как ваши дел<span class="udareniye">а</span>? </div>
-                        <div class="input__item">— Спас<span class="udareniye">и</span>бо, / нормально. А в<span class="udareniye">а</span>ши? </div>
+                        <div class="input__item">— Здр<span class="udareniye">а</span>вствуйте. Как ваши дел<span
+                                class="udareniye">а</span>? </div>
+                        <div class="input__item">— Спас<span class="udareniye">и</span>бо, / нормально. А в<span
+                                class="udareniye">а</span>ши? </div>
                         <div class="input__item">— У меня всё в пор<span class="udareniye">я</span>дке. </div>
                         <div class="input__item">— Я очень р<span class="udareniye">а</span>д! </div>
                         <div class="input__item"><b>Б</b></div>
                         <div class="input__item">- Добрый д<span class="udareniye">е</span>нь! </div>
-                        <div class="input__item">- Здр<span class="udareniye">а</span>вствуйте. Каку вас дел<span class="udareniye">а</span>? </div>
-                        <div class="input__item">- Прекр<span class="udareniye">а</span>сно! А как у в<span class="udareniye">а</span>с? </div>
-                        <div class="input__item">- Спас<span class="udareniye">и</span>бо. У меня всё отл<span class="udareniye">и</span>чно! </div>
+                        <div class="input__item">- Здр<span class="udareniye">а</span>вствуйте. Каку вас дел<span
+                                class="udareniye">а</span>? </div>
+                        <div class="input__item">- Прекр<span class="udareniye">а</span>сно! А как у в<span
+                                class="udareniye">а</span>с? </div>
+                        <div class="input__item">- Спас<span class="udareniye">и</span>бо. У меня всё отл<span
+                                class="udareniye">и</span>чно! </div>
                         <div class="input__item">- Я очень р<span class="udareniye">а</span>да! </div>
                     </div>
-                </div> 
-                
+                </div>
+
                 <div class="section1__footer">
                     <div class="section1__finall">
                         <button class="section1__itog section1__itog1">Посчитать итого</button>
