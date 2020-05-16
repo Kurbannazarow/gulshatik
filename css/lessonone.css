@@ -42,14 +42,14 @@
     margin-top: 20px;
 }
 
-.irochka {
+.irochka, .city {
     border: none;
     border-bottom: 1px solid grey;
     outline: none;
     font-size: 18px;
 }
 
-.plus-minus {
+.plus-minus, .plus-minus2 {
     width: 20px;
     height: 20px;
     padding: 2px;
