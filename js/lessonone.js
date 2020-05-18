@@ -1,5 +1,11 @@
 const DB = {};
 
+const count2 = gonukme2();
+const count3 = gonukme3();
+const count4 = gonukme4();
+const count5 = gonukme5();
+const count6 = gonukme6();
+
 function gonukme2() {
   let temp = [];
   const answers = [
@@ -260,21 +266,60 @@ function gonukme6() {
   };
 }
 
-const count2 = gonukme2();
-const count3 = gonukme3();
-const count4 = gonukme4();
-const count5 = gonukme5();
-const count6 = gonukme6();
-
 function render(obj) {
   obj.exercise2 = count2();
   obj.exercise3 = count3();
   obj.exercise4 = count4();
   obj.exercise5 = count5();
   obj.exercise6 = count6();
+
+  return (
+    obj.exercise2 +
+    obj.exercise3 +
+    obj.exercise4 +
+    obj.exercise5 +
+    obj.exercise6
+  );
 }
 
-const section1Itog1 = document.querySelector(".section1__itog1");
-section1Itog1.addEventListener("click", function name(params) {
-  render(DB);
-});
+function clearInputs() {
+  const inputs = document.querySelectorAll("input");
+  inputs.forEach((elem) => {
+    elem.disabled = false;
+    elem.value = "";
+    DB.exercise2 = 0;
+    DB.exercise3 = 0;
+    DB.exercise4 = 0;
+    DB.exercise5 = 0;
+    DB.exercise6 = 0;
+  });
+
+  return 0;
+}
+
+function itogoOne() {
+  const itogo1 = document.querySelector(".itogo1");
+  const itogo2 = document.querySelector(".itogo2");
+  const itogo3 = document.querySelector(".itogo3");
+
+  const section1Itog1 = document.querySelector(".section1__itog1");
+  const section1Itog2 = document.querySelector(".section1__itog2");
+  const section1Itog3 = document.querySelector(".section1__itog3");
+
+  section1Itog1.addEventListener("click", function name(params) {
+    let sum = render(DB);
+    itogo1.innerHTML = sum;
+  });
+
+  section1Itog3.addEventListener("click", function name(params) {
+    let sum = render(DB);
+    if (sum >50) {
+      params.preventDefault();
+    }
+  });
+
+  section1Itog2.addEventListener("click", function name(params) {
+    itogo1.innerHTML = clearInputs();
+  });
+}
+itogoOne();

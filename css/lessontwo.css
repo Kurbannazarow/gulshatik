@@ -1,0 +1,74 @@
+.header__title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.video {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+.video__star {
+    text-align: center;
+}
+
+.lesson2__title {
+    font-weight: bold;
+}
+
+.ispan, .elena {
+    background: #e8e3e3;
+    border: none;
+    outline: none;
+}
+
+.ispan:focus, .elena:focus {
+    border: 1px solid green;
+}
+
+.lesson2__gonukme1-item, .lesson2__gonukme2-item  {
+    margin-bottom: 15px;
+}
+
+
+/** audio */
+audio {
+    background: #f1f3f4;
+
+}
+.audio {
+    margin-bottom: 25px;
+}
+audio:focus {
+    outline: none;
+}
+
+audio:hover,
+audio:focus,
+audio:active {
+    -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+audio {
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -moz-box-shadow: 2px 2px 4px 0px #006773;
+    -webkit-box-shadow: 2px 2px 4px 0px #006773;
+    box-shadow: 2px 2px 4px 0px #006773;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+    border-radius: 7px 7px 7px 7px;
+}
