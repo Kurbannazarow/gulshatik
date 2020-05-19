@@ -13,7 +13,6 @@
     margin-bottom: 30px;
 }
 
-
 .video__star {
     text-align: center;
 }
@@ -50,8 +49,6 @@
     align-items: center;
     padding: 20px;
 }
-.look__inner {
-}
 
 /**itogo */
 .section1__footer {
@@ -78,7 +75,6 @@
     color: #fff;
     font-size: 20px;
     margin-bottom: 20px;
-
     transition: color .2s linear, border-radius 0.2s linear;
 }
 
