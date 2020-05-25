@@ -17,12 +17,12 @@
       <div class="container">
         <div class="header__item">
           <div class="logo">
-            <a href="index.html" class="logo__link">
+            <a href="index.php" class="logo__link">
               <img class="logo__img" src="./img/icons/лого.svg" alt="logo" />
             </a>
           </div>
           <nav class="nav">
-            <a href="admin.html">
+            <a href="admin.php">
               <li>Курс</li>
             </a>
             <a class="a" href="#news">
@@ -54,7 +54,7 @@
               туркмено-тюрского языка.
             </p>
             <div class="free__btn">
-              <a href="admin.html">
+              <a href="admin.php">
                 <button class="free__btn-inner">
                   Начать обучение
                 </button>

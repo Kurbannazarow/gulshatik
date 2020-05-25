@@ -1,3 +1,21 @@
+<?php
+  require_once './core/function.php';
+  $conn = connect();
+  if(isset($_COOKIE['id']) AND isset($_COOKIE['hash'])) {
+    $sql = "SELECT * FROM users WHERE id='".$_COOKIE['id']."' LIMIT 1";
+    $query = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_assoc($query);
+    if($row['hash'] !== $_COOKIE['hash'] ) {
+      setcookie('id', $row['id'], time()-30*24*60*60, '/');
+      setcookie('hash', $hash, time()-30*24*60*60, '/');
+      header("Location: login.php");
+    } 
+  } else {
+    setcookie('id', $row['id'], time()-30*24*60*60, '/');
+    setcookie('hash', $hash, time()-30*24*60*60, '/');
+    header("Location: login.php");
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,21 +32,21 @@
         <div class="container">
             <div class="header__item">
                 <div class="logo">
-                    <a href="index.html" class="logo__link">
+                    <a href="index.php" class="logo__link">
                         <img class="logo__img" src="./img/icons/лого.svg" alt="logo" />
                     </a>
                 </div>
                 <nav class="nav">
-                    <a href="admin.html">
+                    <a href="admin.php">
                         <li>Курс</li>
                     </a>
-                    <a class="acti" href="index.html#news">
+                    <a class="acti" href="index.php#news">
                         <li>Новости</li>
                     </a>
-                    <a href="index.html#about">
+                    <a href="index.php#about">
                         <li>О нас</li>
                     </a>
-                    <a href="index.html#social">
+                    <a href="index.php#social">
                         <li>Связаться</li>
                     </a>
                 </nav>

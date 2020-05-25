@@ -1,6 +1,23 @@
+<?php
+  require_once './core/function.php';
+  $conn = connect();
+  if(isset($_COOKIE['id']) AND isset($_COOKIE['hash'])) {
+    $sql = "SELECT * FROM users WHERE id='".$_COOKIE['id']."' LIMIT 1";
+    $query = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_assoc($query);
+    if($row['hash'] !== $_COOKIE['hash'] ) {
+      setcookie('id', $row['id'], time()-30*24*60*60, '/');
+      setcookie('hash', $hash, time()-30*24*60*60, '/');
+      header("Location: login.php");
+    } 
+  } else {
+    setcookie('id', $row['id'], time()-30*24*60*60, '/');
+    setcookie('hash', $hash, time()-30*24*60*60, '/');
+    header("Location: login.php");
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +32,7 @@
       <div class="header__item">
 
         <div class="logo">
-          <a href="index.html" class="logo__link">
+          <a href="index.php" class="logo__link">
             <img class="logo__img" src="./img/icons/лого.svg" alt="logo" />
           </a>
         </div>
@@ -31,12 +48,16 @@
 
         <div class="lichn">
           <div class="user">
-            <a href="#">
-              <img src="./img/icons/pochta.png" alt="pochta" class="user__pochta" />
-            </a>
             <div class="user__ava">
-              <a href="#">
-                <img src="./img/icons/avatar.svg" alt="user" class="user__avatar" />
+              <a class="us" href="./logout.php">
+                <!-- <img src="./img/icons/pochta.png" alt="pochta" class="user__pochta" /> -->
+                <p>Выйти</p>
+              </a>
+            </div>
+            <div class="user__ava">
+              <a class="us" href="#">
+                <p><?php echo $row['login']?></p>
+                <!-- <img src="./img/icons/avatar.svg" alt="user" class="user__avatar" /> -->
               </a>
             </div>
           </div>
@@ -50,20 +71,20 @@
       <div class="lessons">
         <div class="lessons__item">
           <ul>
-            <a href="lessonone.html" class="lesson__link">
+            <a href="lessonone.php" class="lesson__link">
               <li class="lesson__li">1. Глаголы «зовут/называется». Родительный падеж. "Как у вас дела?"</li>
             </a>
-            <a href="lessontwo.html" class="lesson__link">
+            <a href="lessontwo.php" class="lesson__link">
               <li class="lesson__li">2. Образование прилагательных. Словообразовательные суффиксы. Предложный падеж.
                 Склонение названий городов и стран. Жить где? Приехать откуда?
               </li>
             </a>
-            <a href="videolesson.html" class="lesson__link">
+            <a href="videolesson.php" class="lesson__link">
               <li class="lesson__li">3. Мужской и женский род профессий. Конструкция «Что за человек…?». Склонение
                 прилагательных.
               </li>
             </a>
-            <a href="videolesson.html" class="lesson__link">
+            <a href="videolesson.php" class="lesson__link">
               <li class="lesson__li">4. Построение вопросов. Спряжение глаголов по лицам и числам – глаголы «вставать,
                 уставать, оставаться». Наречия времени: «всегда, иногда, редко, обычно». Глаголы: «учить, изучать».
               </li>
@@ -87,7 +108,7 @@
               <li class="lesson__li">8. Повелительное наклонение. Продукты. Овощи и фрукты.
               </li>
             </a>
-            <a href="videolesson.html" class="lesson__link">
+            <a href="videolesson.php" class="lesson__link">
               <li class="lesson__li">9. Словообразование: образование прилагательных от существительных при помощи
                 суффиксов «енн», «онн», «н». Наречия и предлоги (Родительный и творительный падежи). Конструкции: «У
                 меня есть + Им.п.»; «У меня нет +Род.п.». Порядковые числительные.

@@ -313,7 +313,7 @@ function itogoOne() {
 
   section1Itog3.addEventListener("click", function name(params) {
     let sum = render(DB);
-    if (sum >50) {
+    if (sum < 50) {
       params.preventDefault();
     }
   });
